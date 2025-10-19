@@ -19,5 +19,25 @@ public class ArrayOperations {
         }
         return min;
     }
+    //3
+    int maximaleSum(int[] Zahlen){
+        int sum = 0;
+        int min = minimaleZahl(Zahlen);
+        for(int n:Zahlen){
+            sum+=n;
+        }
+        sum-=min;
+        return sum;
+    }
+    //4
+    int minimaleSum(int[] Zahlen){
+        int sum = 0;
+        int max = maximaleZahl(Zahlen);
+        for(int n:Zahlen){
+            sum+=n;
+        }
+        sum-=max;
+        return sum;
+    }
 
 }
