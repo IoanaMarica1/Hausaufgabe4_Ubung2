@@ -11,7 +11,7 @@ public class ArrayOperations {
     }
     //2
     int minimaleZahl(int[] Zahlen){
-        int min = 0;
+        int min =Zahlen[0];
         for(int n:Zahlen){
             if(n<min){
                 min = n;
